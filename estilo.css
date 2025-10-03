@@ -1,0 +1,374 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: #003366;
+  color: white;
+  padding: 15px ;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 1px;
+  padding-right: 300px;
+  text-align: center;
+  
+}
+.top {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 40px;
+}
+header img {
+  width: 300px;
+  float:left;
+}
+nav.menu {
+  background-color: #0055a5;
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+  list-style: none;
+  margin: auto;
+  width: 100%;
+}
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display:block;
+  font-weight: bold;
+  padding-right: 120px;
+  padding-left: 120px;
+
+}
+nav.menu a:hover {
+  background-color: #003366;
+  border-radius: 4px;
+  margin: 1px;
+  
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+  flex: 1;
+}
+
+.conteudo h2 {
+  color: #003366;
+  font-size: 30px;
+}
+
+.conteudo p {
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+#conteudo-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.conteudo {
+    margin: 2px;
+    border-radius: 8px;
+    margin: 2px;  
+}
+.conteudo img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+
+}
+.conteudo img:hover {
+  transform: scale(1.05);
+  background-color: #6098cf;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+footer .desenvolvido {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .desenvolvido img {
+  height: 45px;
+}
+
+.bandeiria {
+  float: left;
+}
+.galeria-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.imagem-item {
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.imagem-item img {
+  width: 100%;
+  height: 160px;
+  transition: transform 0.3s ease;
+  display: block;
+  border-radius: 10px;
+}
+.imagem-item p {
+  margin: 10px 0;
+  padding: 0 10px; 
+}
+.text-imagem-item {
+  max-width: 600px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.imagem-item:hover img {
+  transform: scale(1.1);
+}
+.mitologia {
+  text-align: center;
+  padding: 30px;
+}
+
+.mitologia-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imagem-mitologia {
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.imagem-mitologia img {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+
+.imagem-mitologia:hover {
+  transform: scale(1.05);
+}
+
+.imagem-mitologia h3 {
+  margin: 10px 0 5px;
+}
+
+.imagem-mitologia p {
+  margin: 0;
+  font-size: 15px;
+}
+.mitologia h2 {
+  color: #003366;
+  font-size: 30px;
+}
+.subtitulo {
+  color: #003366;
+  font-size: 18px;
+}
+.gastronomia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item-gastronomia {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.img-gastronomia {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.item-gastronomia p {
+  margin: 10px 0;
+  padding: 0 10px; 
+}
+.img-gastronomia:hover {
+  transform: scale(1.1);
+}
+.texto-gastronomia {
+  max-width: 600px;
+  font-size: 15px;
+  text-align: justify;
+}
+/* Estilo básico dos ícones */
+.info-item i {
+  font-size: 2rem;         /* tamanho inicial */
+  transition: transform 0.3s ease; /* transição suave */
+}
+
+/* Expansão ao passar o mouse */
+.info-item i:hover {
+  transform: scale(1.3);  /* aumenta 30% quando hover */
+}
+/* Container de ícones: layout horizontal, centralizado */
+#dados-icons .info-icons {
+  display: flex;
+  justify-content: center;      /* centraliza horizontalmente */
+  align-items: center;          /* alinha verticalmente */
+  flex-wrap: wrap;              /* permite quebra em telas pequenas */
+  gap: 1rem;                    /* espaçamento entre os ícones */
+  margin-bottom: 1rem;          /* espaçamento antes do vídeo */
+}
+
+/* Estilo do item ícone + texto */
+.info-item {
+  text-align: center;
+}
+
+/* Ícone: expansão suave ao passar o mouse */
+.info-item i {
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.info-item:hover i {
+  transform: scale(1.3);
+  color: #0066cc; /* opcional: muda cor ao hover */
+}
+
+/* Texto do label */
+.info-item strong {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+/* Valor (dados) */
+.info-item div {
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Posiciona os ícones horizontalmente acima do resumo */
+#dados-icons .info-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;   
+  gap: 5rem;                
+  margin-bottom: 0rem;       
+}
+#dados-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.info-item i {
+  font-size: 2rem; /* Tamanho do ícone */
+  margin-bottom: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+.info-item:hover i {
+  transform: scale(1.3);
+  color: #0066cc;  /* cor ao passar o mouse */
+}
+
+.info-item strong {
+  font-size: 1rem; /* Tamanho do texto */
+  text-align: center;
+}
+
+.info-item div {
+  font-size: 0.9rem;
+  color: #555;
+}
+/* Estilo para o contêiner do vídeo */
+/* Estilo para a seção do vídeo */
+#video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Estilo para o título do vídeo */
+#video h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo para o iframe do vídeo */
+#video iframe {
+  width: 100%;
+  max-width: 960px;
+  height: 540px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+h2 {
+  color: #003366;
+}
+h3 {
+  color: #003366;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+

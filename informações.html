@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grécia - Antiga Terra dos Deuses</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+ <header>
+    <div id="top">
+      <img src="img/bandeira.png" alt="Bandeira da Grécia" class="bandeira">
+      <h1>Grécia</h1>
+      <p class="top">Antiga Terra dos Deuses</p>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="mitologia.html">Mitologia</a>
+    <a href="gastronomia.html">Gastronomia</a>
+    <a href="Turismo.html">Turismo</a>
+    <a href="informações.html">Informações</a> 
+  </nav>
+    <section id="dados-icons">
+      <div class="info-icons" id="info-icons"></div>
+    </section>
+  <main>
+    <section id="resumo">
+      <h2>Informações</h2>
+      <p class="subtitulo">A Grécia, oficialmente chamada República Helênica, está situada no sudeste da Europa, na Península Balcânica. Com uma área de aproximadamente 131.957 km², o país é caracterizado por seu<br> terreno montanhoso e uma extensa linha costeira, composta por cerca de 6.000 ilhas, das quais aproximadamente 227 são habitadas. Entre as ilhas mais conhecidas estão Creta, Rodes e Santorini.</p>
+    </section>
+
+    <section id="video">
+  <h3>A História da Grécia Antiga</h3>
+  <iframe
+    src="https://www.youtube.com/embed/HJMns0ipipI"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  <p>Canal Impérios AD</p>
+</section>
+
+  </main>
+
+  <footer><i>Criado por Lucas Cardoso</i></footer>
+
+  <script>
+    const dados = [
+      { icon: 'fa-city',       label: 'Capital',        value: 'Atenas' },
+      { icon: 'fa-language',   label: 'Língua oficial', value: 'Grego' },
+      { icon: 'fa-globe',      label: 'Localização',    value: 'Sudeste da Europa' },
+      { icon: 'fa-clock',      label: 'Fuso horário',   value: 'UTC+2 / UTC+3 (verão)' },
+      { icon: 'fa-landmark-flag', label: 'Governo',     value: 'República parlamentar' },
+      { icon: 'fa-cloud-sun',  label: 'Clima',          value: 'Mediterrâneo' },
+      { icon: 'fa-euro-sign',  label: 'Moeda',          value: 'Euro (€)' },
+      { icon: 'fa-expand',     label: 'Área',           value: '131 957 km²' },
+      { icon: 'fa-users',      label: 'População',      value: '≈ 10,4 milhões' }
+    ];
+    const container = document.getElementById('info-icons');
+    dados.forEach(d => {
+      const div = document.createElement('div');
+      div.className = 'info-item';
+      div.innerHTML = `<i class="fas ${d.icon}"></i><strong>${d.label}</strong><div>${d.value}</div>`;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
